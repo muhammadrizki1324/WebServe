@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar Tailwind CDN</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/output.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
       body {
@@ -137,8 +137,8 @@
           <p class="text-sm font-semibold text-indigo-950">We host more than 120,000 websites</p>
         </div>
 
-        <div class="flex flex-col gap-y-2">
-          <h1 class="text-indigo-950 font-bold text-6xl font-[Clash-Display] text-[70px] leading-none">
+        <div class="flex flex-col">
+          <h1 class="text-indigo-950 font-bold text-6xl font-[Clash-Display] text-4xl leading-none">
             Grow Online
             <br />
             Business Faster.
@@ -212,9 +212,7 @@
         </div>
       </div>
 
-      <div class="items-center justify-between">
-        <img src="assets/ilustrations-header.png" alt="" srcset="" class="h-[550px]" height="100px" />
-      </div>
+      <img src="assets/ilustrations-header.png" alt="" srcset="" class="h-[550px]" />
     </section>
 
     <!-- Partner Section -->
@@ -623,6 +621,156 @@
             <p class="text-base text-gray-500 leading-7">Have a long weekend without worrying any loss</p>
           </div>
           <a href="" class="text-violet-600 font-semibold">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefit Section -->
+    <section class="Benefits max-w-6xl mx-auto py-12 flex flex-row justify-between items-center">
+      <img src="assets/benefit.png" alt="Benefit Image" class="h-[550px]" />
+
+      <div class="flex flex-col gap-y-10">
+        <div class="flex flex-col gap-y-3">
+          <h2 class="text-5xl font-semibold font-['Clash-Display'] text-[#080C2E] leading-tight">
+            We Have Very
+            <br />
+            Strong Ecosystem
+          </h2>
+          <p class="text-base leading-7 text-gray-500">
+            We provide a variety of servers to grow your users
+            <br />
+            acquisition much user-friendly and boosting up sales.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-y-5">
+          <!-- Card 1-->
+          <div class="flex flex-row gap-x-4 rounded-xl bg-white items-center p-5 shadow-md">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1925 42.1667H28.6925C38.2759 42.1667 42.1092 38.3334 42.1092 28.75V17.25C42.1092 7.66671 38.2759 3.83337 28.6925 3.83337H17.1925C7.60921 3.83337 3.77588 7.66671 3.77588 17.25V28.75C3.77588 38.3334 7.60921 42.1667 17.1925 42.1667Z"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3.77588 24.3417L15.2759 24.3034C16.7134 24.3034 18.3234 25.3959 18.86 26.7375L21.045 32.2575C21.5434 33.5034 22.3292 33.5034 22.8275 32.2575L27.2167 21.1217C27.6384 20.0484 28.4242 20.01 28.9609 21.0259L30.9542 24.8017C31.5484 25.9325 33.0817 26.8525 34.3467 26.8525H42.1284"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="flex flex-col">
+              <h3 class="font-bold text-xl font-['Clash-Display']">$880 Mio</h3>
+              <p class="text-base text text-gray-500">Company budget saved</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-row gap-x-4 rounded-xl bg-white items-center p-5 shadow-md">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1925 42.1667H28.6925C38.2759 42.1667 42.1092 38.3334 42.1092 28.75V17.25C42.1092 7.66671 38.2759 3.83337 28.6925 3.83337H17.1925C7.60921 3.83337 3.77588 7.66671 3.77588 17.25V28.75C3.77588 38.3334 7.60921 42.1667 17.1925 42.1667Z"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3.77588 24.3417L15.2759 24.3034C16.7134 24.3034 18.3234 25.3959 18.86 26.7375L21.045 32.2575C21.5434 33.5034 22.3292 33.5034 22.8275 32.2575L27.2167 21.1217C27.6384 20.0484 28.4242 20.01 28.9609 21.0259L30.9542 24.8017C31.5484 25.9325 33.0817 26.8525 34.3467 26.8525H42.1284"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="flex flex-col gap-y-2">
+              <h3 class="font-bold text-xl font-['Clash-Display']">$880 Mio</h3>
+              <p class="text-base text text-gray-500">Company budget saved</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-row gap-x-4 rounded-xl bg-white items-center p-5 shadow-md">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1925 42.1667H28.6925C38.2759 42.1667 42.1092 38.3334 42.1092 28.75V17.25C42.1092 7.66671 38.2759 3.83337 28.6925 3.83337H17.1925C7.60921 3.83337 3.77588 7.66671 3.77588 17.25V28.75C3.77588 38.3334 7.60921 42.1667 17.1925 42.1667Z"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3.77588 24.3417L15.2759 24.3034C16.7134 24.3034 18.3234 25.3959 18.86 26.7375L21.045 32.2575C21.5434 33.5034 22.3292 33.5034 22.8275 32.2575L27.2167 21.1217C27.6384 20.0484 28.4242 20.01 28.9609 21.0259L30.9542 24.8017C31.5484 25.9325 33.0817 26.8525 34.3467 26.8525H42.1284"
+                stroke="#640EF1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="flex flex-col">
+              <h3 class="font-bold text-xl font-['Clash-Display']">$880 Mio</h3>
+              <p class="text-base text text-gray-500">Company budget saved</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Benefit -->
+        <div class="flex flex-row items-center">
+          <a
+            href=""
+            class="hover:bg-indigo-950 text-base text-lg text-white font-semibold bg-[#640EF1] px-10 py-4 rounded-full">
+            Try Free Trial
+          </a>
+          <a
+            href=""
+            class="hover:bg-indigo-950 text-base text-lg text-[#640EF1] font-semibold px-10 py-4 rounded-full flex flex-row items-center gap-x-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 12.2V13.9C20 17.05 18.2 18.4 15.5 18.4H6.5C3.8 18.4 2 17.05 2 13.9V8.5C2 5.35 3.8 4 6.5 4H9.2C9.07 4.38 9 4.8 9 5.25V9.15002C9 10.12 9.32 10.94 9.89 11.51C10.46 12.08 11.28 12.4 12.25 12.4V13.79C12.25 14.3 12.83 14.61 13.26 14.33L16.15 12.4H18.75C19.2 12.4 19.62 12.33 20 12.2Z"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M22 5.25V9.15002C22 10.64 21.24 11.76 20 12.2C19.62 12.33 19.2 12.4 18.75 12.4H16.15L13.26 14.33C12.83 14.61 12.25 14.3 12.25 13.79V12.4C11.28 12.4 10.46 12.08 9.89 11.51C9.32 10.94 9 10.12 9 9.15002V5.25C9 4.8 9.07 4.38 9.2 4C9.64 2.76 10.76 2 12.25 2H18.75C20.7 2 22 3.3 22 5.25Z"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M7.40002 22H14.6"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M11 18.4V22"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M18.4955 7.25H18.5045"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M15.6957 7.25H15.7047"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M12.8954 7.25H12.9044"
+                stroke="#640EF1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Schedule a Demo
+          </a>
         </div>
       </div>
     </section>
