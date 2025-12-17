@@ -325,9 +325,6 @@
   .w-full {
     width: 100%;
   }
-  .w-screen {
-    width: 100vw;
-  }
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
@@ -853,11 +850,6 @@
   .md\:gap-y-10 {
     @media (width >= 48rem) {
       row-gap: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:overflow-x-hidden {
-    @media (width >= 48rem) {
-      overflow-x: hidden;
     }
   }
   .md\:text-left {
